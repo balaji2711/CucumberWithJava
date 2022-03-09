@@ -1,0 +1,189 @@
+[ {
+  "line" : 1,
+  "elements" : [ {
+    "start_timestamp" : "2022-03-01T12:58:51.868Z",
+    "line" : 5,
+    "name" : "Login functionality",
+    "description" : "",
+    "id" : "login-functionality;login-functionality",
+    "type" : "scenario",
+    "keyword" : "Scenario",
+    "steps" : [ {
+      "result" : {
+        "duration" : 5680000000,
+        "status" : "passed"
+      },
+      "line" : 6,
+      "name" : "I launch the application",
+      "match" : {
+        "location" : "StepDefinitions.LoginSteps.i_launch_the_application()"
+      },
+      "keyword" : "When "
+    }, {
+      "result" : {
+        "duration" : 5070000000,
+        "status" : "passed"
+      },
+      "line" : 7,
+      "name" : "the application should be loaded successfully",
+      "match" : {
+        "location" : "StepDefinitions.LoginSteps.the_application_should_be_loaded_successfully()"
+      },
+      "keyword" : "Then "
+    } ],
+    "tags" : [ {
+      "name" : "@Smoke"
+    } ]
+  }, {
+    "start_timestamp" : "2022-03-01T12:59:02.699Z",
+    "line" : 10,
+    "name" : "Login functionalities",
+    "description" : "",
+    "id" : "login-functionality;login-functionalities",
+    "type" : "scenario",
+    "keyword" : "Scenario",
+    "steps" : [ {
+      "result" : {
+        "duration" : 6166000000,
+        "status" : "passed"
+      },
+      "line" : 11,
+      "name" : "I launch the application",
+      "match" : {
+        "location" : "StepDefinitions.LoginSteps.i_launch_the_application()"
+      },
+      "keyword" : "When "
+    }, {
+      "result" : {
+        "duration" : 5044000000,
+        "status" : "passed"
+      },
+      "line" : 12,
+      "name" : "the application should be loaded successfully",
+      "match" : {
+        "location" : "StepDefinitions.LoginSteps.the_application_should_be_loaded_successfully()"
+      },
+      "keyword" : "Then "
+    } ],
+    "tags" : [ {
+      "name" : "@Smoke"
+    } ]
+  }, {
+    "start_timestamp" : "2022-03-01T12:59:13.911Z",
+    "line" : 15,
+    "name" : "Login functionality Check",
+    "description" : "",
+    "id" : "login-functionality;login-functionality-check",
+    "type" : "scenario",
+    "keyword" : "Scenario",
+    "steps" : [ {
+      "result" : {
+        "duration" : 4007000000,
+        "status" : "passed"
+      },
+      "line" : 16,
+      "name" : "I launch the application",
+      "match" : {
+        "location" : "StepDefinitions.LoginSteps.i_launch_the_application()"
+      },
+      "keyword" : "When "
+    }, {
+      "result" : {
+        "duration" : 4999000000,
+        "status" : "passed"
+      },
+      "line" : 17,
+      "name" : "the application should be loaded successfully",
+      "match" : {
+        "location" : "StepDefinitions.LoginSteps.the_application_should_be_loaded_successfully()"
+      },
+      "keyword" : "Then "
+    } ],
+    "tags" : [ {
+      "name" : "@Smoke"
+    } ]
+  } ],
+  "name" : "Login Functionality",
+  "description" : "  To test the login",
+  "id" : "login-functionality",
+  "keyword" : "Feature",
+  "uri" : "file:src/test/java/Features/Login.feature",
+  "tags" : [ ]
+} , {
+  "line" : 1,
+  "elements" : [ {
+    "start_timestamp" : "2022-03-01T12:58:51.862Z",
+    "line" : 5,
+    "name" : "Logout functionality",
+    "description" : "",
+    "id" : "logout-functionality;logout-functionality",
+    "type" : "scenario",
+    "keyword" : "Scenario",
+    "steps" : [ {
+      "result" : {
+        "duration" : 5488000000,
+        "status" : "passed"
+      },
+      "line" : 6,
+      "name" : "I launch the application",
+      "match" : {
+        "location" : "StepDefinitions.LoginSteps.i_launch_the_application()"
+      },
+      "keyword" : "When "
+    }, {
+      "result" : {
+        "duration" : 5057000000,
+        "status" : "passed"
+      },
+      "line" : 7,
+      "name" : "the application should be loaded successfully",
+      "match" : {
+        "location" : "StepDefinitions.LoginSteps.the_application_should_be_loaded_successfully()"
+      },
+      "keyword" : "Then "
+    } ],
+    "tags" : [ {
+      "name" : "@Smoke"
+    } ]
+  }, {
+    "start_timestamp" : "2022-03-01T12:59:02.479Z",
+    "line" : 10,
+    "name" : "Logout functionalities",
+    "description" : "",
+    "id" : "logout-functionality;logout-functionalities",
+    "type" : "scenario",
+    "keyword" : "Scenario",
+    "steps" : [ {
+      "result" : {
+        "duration" : 6161000000,
+        "status" : "passed"
+      },
+      "line" : 11,
+      "name" : "I launch the application",
+      "match" : {
+        "location" : "StepDefinitions.LoginSteps.i_launch_the_application()"
+      },
+      "keyword" : "When "
+    }, {
+      "result" : {
+        "duration" : 5053000000,
+        "status" : "passed"
+      },
+      "line" : 12,
+      "name" : "the application should be loaded successfully",
+      "match" : {
+        "location" : "StepDefinitions.LoginSteps.the_application_should_be_loaded_successfully()"
+      },
+      "keyword" : "Then "
+    } ],
+    "tags" : [ {
+      "name" : "@Smoke"
+    } ]
+  } ],
+  "name" : "Logout Functionality",
+  "description" : "  To test the logout",
+  "id" : "logout-functionality",
+  "keyword" : "Feature",
+  "uri" : "file:src/test/java/Features/Logout.feature",
+  "tags" : [ ]
+} ]

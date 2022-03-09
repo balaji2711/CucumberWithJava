@@ -1,0 +1,58 @@
+plugins {
+    id 'java'
+    id 'io.qameta.allure' version '2.8.1'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+configurations {
+    cucumberRuntime.extendsFrom testRuntime
+}
+
+allure {
+    aspectjweaver = true
+    autoconfigure = true
+    version = '2.17.2'
+}
+
+task cucumber() {
+    dependsOn assemble, compileTestJava
+    doLast {
+        javaexec {
+            systemProperty("allure.results.directory", "build/allure-results")
+            main = "io.cucumber.core.cli.Main"
+            classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
+            args = [
+                    '--plugin', 'pretty',
+                    '--plugin', 'io.qameta.allure.cucumber4jvm.AllureCucumber4Jvm',
+                    '--plugin',  'com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:Report',
+                    '--glue', 'StepDefinitions',
+                    'src/test/java/Features',
+                    '--tags', '@Smoke'
+            ]
+        }
+    }
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    testImplementation 'io.qameta.allure:allure-junit5:2.13.9'
+    testImplementation 'io.cucumber:cucumber-java:7.2.3'
+    testImplementation 'io.cucumber:cucumber-junit:7.2.3'
+    testImplementation 'io.cucumber:gherkin:5.1.0'
+    implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
+    implementation 'org.seleniumhq.selenium:selenium-chrome-driver:3.141.59'
+    testImplementation 'org.junit.vintage:junit-vintage-engine:5.8.2'
+    testImplementation 'io.qameta.allure:allure-cucumber4-jvm:2.17.2'
+    testImplementation 'io.github.prashant-ramcharan:courgette-jvm:6.3.0'
+}
+
+test {
+    useJUnitPlatform()
+}

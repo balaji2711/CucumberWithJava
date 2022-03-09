@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RunTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-03-01T09:44:31" hostname="MD1W0AAC" time="18.753">
+  <properties/>
+  <testcase name="Login functionality #1" classname="RunTests" time="10.177"/>
+  <testcase name="Login functionalities" classname="RunTests" time="8.576"/>
+  <system-out><![CDATA[
+@Smoke
+Scenario: Login functionality                        ?[90m# src/test/java/Features/Login.feature:5?[0m
+  ?[32mWhen ?[0m?[32mI launch the application?[0m                      ?[90m# StepDefinitions.LoginSteps.i_launch_the_application()?[0m
+  ?[32mThen ?[0m?[32mthe application should be loaded successfully?[0m ?[90m# StepDefinitions.LoginSteps.the_application_should_be_loaded_successfully()?[0m
+
+@Smoke
+Scenario: Login functionalities                      ?[90m# src/test/java/Features/Login.feature:10?[0m
+  ?[32mWhen ?[0m?[32mI launch the application?[0m                      ?[90m# StepDefinitions.LoginSteps.i_launch_the_application()?[0m
+  ?[32mThen ?[0m?[32mthe application should be loaded successfully?[0m ?[90m# StepDefinitions.LoginSteps.the_application_should_be_loaded_successfully()?[0m
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab) on port 16793
+Only local connections are allowed.
+Mar 01, 2022 3:14:33 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Starting ChromeDriver 2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab) on port 22916
+Only local connections are allowed.
+Mar 01, 2022 3:14:42 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+?[32m?[1m??????????????????????????????????????????????????????????????????????????????????????[0m
+?[32m?[1m??[0m Share your Cucumber Report with your team at ?[36m?[1m?[4mhttps://reports.cucumber.io?[0m          ?[32m?[1m??[0m
+?[32m?[1m??[0m Activate publishing with one of the following:                                    ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/cucumber.properties:          ?[36mcucumber.publish.enabled?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/junit-platform.properties:    ?[36mcucumber.publish.enabled?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
+?[32m?[1m??[0m Environment variable:                            ?[36mCUCUMBER_PUBLISH_ENABLED?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
+?[32m?[1m??[0m JUnit:                                           ?[36m@CucumberOptions?[0m(publish = ?[36mtrue?[0m) ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m More information at ?[36mhttps://cucumber.io/docs/cucumber/environment-variables/?[0m      ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m Disable this message with one of the following:                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/cucumber.properties:          ?[36mcucumber.publish.quiet?[0m=?[36mtrue?[0m      ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/junit-platform.properties:    ?[36mcucumber.publish.quiet?[0m=?[36mtrue?[0m      ?[32m?[1m??[0m
+?[32m?[1m??????????????????????????????????????????????????????????????????????????????????????[0m
+]]></system-err>
+</testsuite>
